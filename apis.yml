@@ -1,8 +1,24 @@
 aid: strella-biotechnology
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/strella-biotechnology.png
 name: Strella Biotechnology
-description: 'Strella Biotechnology is a company surfaced as a portfolio company of gv and added to the
-  API Evangelist network as a stub for enrichment. Sector: frontier-tech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Strella Biotechnology is a Seattle-based produce-quality intelligence company that uses
+  ethylene gas sensors and predictive analytics to reduce food waste across the fresh-produce supply chain.
+  Its product line spans Storage (predicting produce maturity in cold storage), Ripen (automating the
+  ripening process), Sequence (optimizing shipment order to cut shrink), and Monitor (real-time environmental
+  monitoring in logistics). The company reports tracking over two billion pounds of produce across 26
+  countries and is backed by GV (Google Ventures). As of this enrichment pass, Strella exposes no public
+  developer API, developer portal, SDKs, or webhook surface.'
 url: https://raw.githubusercontent.com/api-evangelist/strella-biotechnology/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Frontier Tech
+- Agriculture
+- AgTech
+- Supply Chain
+- Food Tech
+- IoT
+- Sensors
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,13 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/strella-biotechnology-domain-security.yml
 - type: Website
-  url: strellabiotech.com
+  url: https://strellabiotech.com
+
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
